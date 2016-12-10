@@ -37,6 +37,7 @@ public class ExpressionsWithLambda {
         }
         }).start();
         
+        new Timer(1000, e -> System.out.println(e) ).start();
         new Timer(1000, System.out::println ).start();
 
         try {
