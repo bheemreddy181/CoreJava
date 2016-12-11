@@ -6,7 +6,7 @@ public class LearnSingleton {
 
     public static void main(String[] args) {
         
-        Controller controler1 =  Controller.getApplicationController();
+        Controller controler1 = Controller.getApplicationController();
         Controller controler2 = Controller.getApplicationController();
         Controller controler3 = Controller.getApplicationController();
         
