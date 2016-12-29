@@ -1,4 +1,4 @@
-package com.manoharacademy.singletonPattern;
+package com.manoharacademy.corejava.advanced.singletonPattern;
 
 import javax.swing.Action;
 

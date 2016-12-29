@@ -1,4 +1,4 @@
-package com.manoharacademy.programs;
+package com.manoharacademy.corejava.programs;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

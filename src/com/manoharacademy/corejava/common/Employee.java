@@ -1,4 +1,4 @@
-package com.manoharacademy.common;
+package com.manoharacademy.corejava.common;
 
 
 public class Employee implements Comparable<Employee>{

@@ -1,4 +1,4 @@
-package com.manoharacademy.scope;
+package com.manoharacademy.corejava.fundamentals.scope;
 
 public class ScopeOfVariable {
 

@@ -1,4 +1,4 @@
-package com.manoharacademy.enumeration;
+package com.manoharacademy.corejava.advanced.enumeration;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

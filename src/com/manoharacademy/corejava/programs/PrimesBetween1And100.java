@@ -1,4 +1,4 @@
-package com.manoharacademy.programs;
+package com.manoharacademy.corejava.programs;
 
 
 public class PrimesBetween1And100 {

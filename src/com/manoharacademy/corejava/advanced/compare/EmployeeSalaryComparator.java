@@ -1,7 +1,7 @@
-package com.manoharacademy.compare;
+package com.manoharacademy.corejava.advanced.compare;
 
 import java.util.Comparator;
-import com.manoharacademy.common.Employee;
+import com.manoharacademy.corejava.common.Employee;
 
 
 public class EmployeeSalaryComparator implements Comparator<Employee> {

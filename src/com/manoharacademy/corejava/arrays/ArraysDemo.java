@@ -1,6 +1,4 @@
-package com.manoharacademy.arrays;
-
-import java.util.Date;
+package com.manoharacademy.corejava.arrays;
 
 public class ArraysDemo {
     public static void main(String[] args) {

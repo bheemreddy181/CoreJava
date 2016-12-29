@@ -1,4 +1,4 @@
-package com.manoharacademy.programs;
+package com.manoharacademy.corejava.programs;
 
 public class PrintFirstTenFibonacciNumbers {
     public static void main(String[] args) {

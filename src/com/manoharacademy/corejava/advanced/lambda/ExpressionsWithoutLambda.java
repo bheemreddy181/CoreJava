@@ -1,14 +1,17 @@
-package com.manoharacademy.lambda;
+package com.manoharacademy.corejava.advanced.lambda;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.Timer;
-import com.manoharacademy.common.Employee;
+import com.manoharacademy.corejava.common.Employee;
 
-public class ExpressionsWithLambda {
+public class ExpressionsWithoutLambda {
 
     public static void main(String[] args) {
         Employee employee1 = new Employee(100, "Manohar", 10000);
@@ -25,25 +28,18 @@ public class ExpressionsWithLambda {
         employeeList.add(employee5);
         
 
-        Collections.sort(employeeList, 
-                ( employee11,  employee22) ->  Double.compare(employee11.getSalary(), employee22.getSalary())
-        );
+        Collections.sort(employeeList, new EmployeeSalaryComparator());
         printMessage("Employee List after sort by salary");
         employeeList.forEach(System.out::println);
         
-        new Thread( ()-> {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-        }
-        }).start();
+        new Thread( new PrintingRunnable()).start();
         
-        new Timer(1000, e -> System.out.println(e) ).start();
-        new Timer(1000, System.out::println ).start();
+        new Timer(1000, new SimpleActionListner()).start();
 
         try {
             Thread.sleep(10000);
         } catch (InterruptedException ex) {
-            Logger.getLogger(ExpressionsWithLambda.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ExpressionsWithoutLambda.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
@@ -53,4 +49,29 @@ public class ExpressionsWithLambda {
         System.out.printf("==================== %s =====================\n", message);
     }
 
+}
+
+class EmployeeSalaryComparator implements Comparator<Employee> {
+    @Override
+    public int compare(Employee employee1, Employee employee2) {
+        return Double.compare(employee1.getSalary(), employee2.getSalary());
+    }
+}
+
+
+class PrintingRunnable implements Runnable{
+    @Override
+    public void run() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+class SimpleActionListner implements ActionListener{
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println(e);
+    }
+    
 }

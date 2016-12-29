@@ -1,6 +1,6 @@
-package com.manoharacademy.lambda;
+package com.manoharacademy.corejava.advanced.lambda;
 
-import com.manoharacademy.common.Employee;
+import com.manoharacademy.corejava.common.Employee;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;

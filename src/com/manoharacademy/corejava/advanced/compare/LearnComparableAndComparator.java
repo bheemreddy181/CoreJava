@@ -1,9 +1,9 @@
-package com.manoharacademy.compare;
+package com.manoharacademy.corejava.advanced.compare;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import com.manoharacademy.common.Employee;
+import com.manoharacademy.corejava.common.Employee;
 
 public class LearnComparableAndComparator {
 
