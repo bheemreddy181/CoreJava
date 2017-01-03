@@ -1,7 +1,6 @@
 package com.manoharacademy.corejava.arrays;
 
 import java.util.Arrays;
-import java.util.Date;
 
 public class EnhancedForLoop {
 
