@@ -9,9 +9,9 @@ public class TwoDimensionalArrays {
 
         //32 is space
         //42 is star
-//        for (int i = 0; i <= 256; i++) {
-//            System.out.printf("%d - %c\n", i,i);
-//        }
+        for (int i = 0; i <= 256; i++) {
+            System.out.printf("%d - %c\n", i,i);
+        }
         
         int[] array1 = {
             2,

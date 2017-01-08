@@ -1,4 +1,4 @@
-package com.manoharacademy.corejava.programs;
+package com.manoharacademy.corejava.programs.fundamentals;
 
 import java.util.Scanner;
 
